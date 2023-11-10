@@ -6,3 +6,50 @@ c-No, ya que los forkeos de GAMMA y ALFA no tienen conexion entre si, como son c
   no pueden pushear cambios al mismo, por lo tanto no pueden pullear los cambios que hagan entre ellos.
 d-No, los datos que esten dentro del fork no se van a perder si se actualiza el mismo con los datos del
   repositorio original.
+
+e-Comandos realizados:
+1-Rodriguez Roig Ciro(BETA):
+-git clone https://github.com/cirorroig/TP_SO_i2_Equipo126.git
+(Aca se crea el archivo fork.txt)
+-git add .
+-git commit -m "BETA crea fork.txt"
+-git push origin main
+
+2-GAMMA hace FORK del repositorio, descarga su repositorio EN FORMA LOCAL, modifica
+el archivo agregando su nombre y apellido , la iP de la máquina y la hora, y hace el push a
+su repositorio.
+ -Ivo Curto Eivers y Damian Posada: git clone https://github.com/cirorroig/TP_SO_i2_Equipo126.git
+ -Ivo Curto Eivers y Damian Posada: ipconfig en cmd para obtener ip
+ -Ivo Curto Eivers y Damian Posada: git add .
+ -Ivo Curto Eivers y Damian Posada: git commit -m "cambios realizados"
+ -Ivo Curto Eivers y Damian Posada: git push origin main
+ 
+
+3-Rodriguez Roig Ciro(BETA):
+(Aca se crea el archivo NuevoDato.txt)
+-git add .
+-git commit -m "BETA crea NuevoDato.txt"
+-git push origin main
+
+4-GAMMA y ALFA deberían lograr actualizar su repositorio al estado que lo dejó BETA
+ -Ivo Curto Eivers y Damian Posada: git remote add upstream https://github.com/cirorroig/TP_SO_i2_Equipo126.git
+ -Ivo Curto Eivers y Damian Posada: git pull upstream main
+ -Ivo Curto Eivers y Damian Posada: git push origin main 
+
+5-Rodriguez Roig Ciro(BETA):
+(Aca se crea el archivo de las respuestas con las respuestas c y d)
+-git add .
+-git commit -m "BETA crea archivo de respuestas.txt"
+-git push origin main
+
+6-GAMMA sube las respuestas a- y b
+ -Ivo Curto Eivers: git pull upstream main
+ -Ivo Curto Eivers: git add .
+ -Ivo Curto Eivers: git commit -m "Gamma agrega sus respuestas"
+ -Ivo Curto Eivers: git push origin main
+
+7-ALFA sube la respuesta e 
+ -Damian Posada: git pull upstream main
+ -Damian Posada: git add .
+ -Damian Posada: git commit -m "ALFA agrega sus respuestas"
+ -Damian Posada: git push origin main
